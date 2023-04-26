@@ -727,9 +727,6 @@ transition: background-color var(--anim);
   | Header
   |============================
 */
-.adress-mail{
-  transition: color var(--anim);
-}
 
 .adress-mail:hover {
   color: #404bbf;
@@ -807,13 +804,12 @@ color: #FFFFFF;
 
 .buttons-menu-btn:hover {
 background-color:#404BBF;
-
 }
 
 .buttons-menu-btn:focus {
   background-color: #404BBF;
-
 }
+
 .buttons-menu-btn:focus {
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
   0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -866,7 +862,7 @@ letter-spacing: 0.02em;
 line-height: 1.5;
 color: var(--footer-txt-cl);
 font-family: var(--primary-font);
-text-align: center;
+text-align: left;
 }
 
 .images-link:hover .overlay{
@@ -932,6 +928,7 @@ left: 0;
 background: rgba(46, 47, 66, 0.4);
 width: 100%;
 height: 100%;
+transition: opacity var(--anim), visibility var(--anim);
 } 
 
 .backdrop.is-hidden {
@@ -963,7 +960,11 @@ opacity: 1;
 }
 
 .modal-button {
+position: absolute;
 display: block;
+
+top: 24px;
+right: 24px;
 margin-left: auto;
 width: 24px;
 height: 24px;
@@ -972,6 +973,7 @@ border-radius: 50%;
 cursor: pointer;
 background: #E7E9FC;
 border: 1px solid rgba(0, 0, 0, 0.1);
+transition: transform var(--anim);
 }
 
 .modal-icon {
